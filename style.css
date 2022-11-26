@@ -20,7 +20,7 @@ html::-webkit-scrollbar-thumb {
     background-color: #fff;
 }
 html::-webkit-scrollbar-track {
-    background-color: #0E1924;
+    background-color: #123253;
 }
 
 body {
@@ -76,7 +76,7 @@ nav {
     position: fixed;
     top: 0%;
     width: 100vw;
-    z-index: 99;
+    z-index: 99999;
 }
 
 nav .logo img {
@@ -90,8 +90,32 @@ nav ul {
     list-style-type: none;
 }
 
+nav ul li {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.active-link {
+    height: 2px;
+    width: 120%;
+    background-color: #fff;
+    position: absolute;
+    left: -10%;
+    bottom: -25%;
+}
+
 nav ul li i {
     margin-right: .5em;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: rgb(137, 132, 132);
+    transition: all .5s ease;
 }
 
 #home {
@@ -131,8 +155,6 @@ nav ul li i {
     cursor: pointer;
 }
 
-
-
 .btns button:nth-child(1) {
     background-color: #fff;
     color: #0E1924;
@@ -140,15 +162,20 @@ nav ul li i {
     margin-right: 2em;
 }
 
-.btns button:nth-child(1):hover {
-    transition: .5s ease all;
-    background-color: rgb(14, 25, 36);
+.btns button:nth-child(2) a {
     color: #fff;
 }
 
-.btns button:nth-child(2):hover {
+
+.btns button:nth-child(1):hover, .btns button:nth-child(1):hover a{
     transition: .5s ease all;
-    color: #0E1924;
+    background-color: rgb(14, 25, 36);
+    color: #fff !important;
+}
+
+.btns button:nth-child(2):hover a, .btns button:nth-child(2):hover{
+    transition: .5s ease all;
+    color: #0E1924 !important;
     background-color: #fff;
     font-weight: 700;
 }
@@ -195,9 +222,10 @@ nav ul li i {
 
 .hallSvg {
     position: absolute;
-    bottom: -5%;
+    bottom: -10%;
     width: 100%;
     height: 100%;
+    z-index: 999;
 }
 
 .gallery {
@@ -240,50 +268,33 @@ nav ul li i {
     background-color: #0E1924;
     color: #fff;
     flex-direction: row;
-    padding: 0 1em 0 1em;
+    overflow: hidden;
 }
 
 .about h1 {
     font-size: xx-large;
+    text-align: left;
 }
 
-.about .about-text,
-.about .image,
-.about .features {
-    width: 33.3%;
-}
-
-.about .image img {
-    width: 90%;
-}
-
-.about .image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.about .features .feature {
-    display: flex;
-    column-gap: 2em;
-    margin-top: 2em;
-    align-items: center;
-    justify-content: center;
-}
-
-.about .features .feature h2 {
-    text-align: center;
-    width: 10em;
-}
-
-.about .features .feature img {
-    width: 100px;
-}
-
-/* #wave {
+.about .about-text {
+    width: 50.3%;
     position: absolute;
-    bottom: 0;
-} */
+    top: 50%;
+    left: 50%;
+    z-index: 98;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+}
+
+.about h1 {
+    font-size: 3em;
+}
+
+
+.image {
+    filter: brightness(30%);
+}
+
 
 @keyframes clouds-loop-1 {
     to {
@@ -386,4 +397,120 @@ iframe {
     background: #fff;
     color: #0E1924;
     transition: .5s ease all;
+}
+
+.hamburger{
+    display: none;
+}
+
+.mob-nav {
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    z-index: 99999999;
+    left: 1000%
+}
+
+.mob-nav ul li {
+    padding: 1em;
+    border-bottom: 1px solid gray;
+    background-color: #fff;
+}
+
+.mob-nav ul li:nth-child(1):hover {
+    background-color: #fff;
+}
+
+.mob-nav ul li:hover {
+    background-color: #0E1924;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+li img {
+    width: 100px;
+    filter: brightness(0%);
+    margin: -2em -1em -2em -1em;
+}
+
+.mob-nav ul li i {
+    margin-right: 1em;
+}
+
+/* less than 750 */
+@media screen and (max-width: 750px) {
+    #home {
+        flex-direction: column;
+    }
+
+    #home section {
+        width: 100% !important;
+    }
+
+    #home section:nth-child(2) {
+        display: none;
+    }
+
+    #home section:nth-child(1) h1{
+        font-size: 1.8em;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .active-link {
+        display: none;
+    }
+
+    nav ul li{
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 480px;
+        margin-bottom: 2em;
+    }
+
+    .contact-h1{
+        margin-top: 1em;
+    }
+
+    .about-text h1 {
+        font-size: 1.2em;
+    }
+
+    .about-text article {
+        font-size: .5em;
+    }
+
+    .about .one {
+        width: 500px !important;
+    }
+    
+    .about .two {
+        width: 500px !important;
+    }
+
+    .hallSvg {
+        bottom: -30%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
 }
