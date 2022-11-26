@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed";
+}
+
+html {
+    scrollbar-width: normal;
+    scrollbar-color: #fff #0E1924;
+}
+
+html::-webkit-scrollbar {
+    width: 1.5vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+html::-webkit-scrollbar-track {
+    background-color: #0E1924;
+}
+
+body {
+    background-color: #0E1924;
+    overflow-x: hidden;
+}
+
+#splash {
+    background-color: #ffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.splash-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.splash-data.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.splash-data h1 {
+    margin-top: -15%;
+}
+
+.splash-data img {
+    filter: invert(100%);
+    width: 12em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(14, 25, 36, 0.7);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    height: 4em;
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    z-index: 99;
+}
+
+nav .logo img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+    list-style-type: none;
+}
+
+nav ul li i {
+    margin-right: .5em;
+}
+
+#home {
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    position: relative;
+    margin-top: 4em;
+}
+
+#home section:nth-child(1) {
+    color: #fff;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+
+    height: 100%;
+}
+
+#home section:nth-child(1) h3 {
+    font-size: large;
+}
+
+.btns {
+    margin-top: .2em;
+}
+
+.btns button {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+
+
+.btns button:nth-child(1) {
+    background-color: #fff;
+    color: #0E1924;
+    font-weight: 700;
+    margin-right: 2em;
+}
+
+.btns button:nth-child(1):hover {
+    transition: .5s ease all;
+    background-color: rgb(14, 25, 36);
+    color: #fff;
+}
+
+.btns button:nth-child(2):hover {
+    transition: .5s ease all;
+    color: #0E1924;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.hero-img {
+    width: 40%;
+    height: 125%;
+    margin-top: -10%;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+#home .arrow {
+    position: absolute;
+    width: 12em;
+    top: 10%;
+    left: 33%;
+}
+
+#home .dots {
+    position: absolute;
+    width: 10em;
+    top: 68%;
+    left: 0%;
+    rotate: 180deg;
+}
+
+
+.gallery,
+.about,
+.contact {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+}
+
+.hallSvg {
+    position: absolute;
+    bottom: -5%;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery {
+    background: linear-gradient(#fff, rgb(14, 25, 36));
+}
+
+.gallery h1,
+.splash-data h1,
+.about h1,
+#home h1,
+.contact h1 {
+    font-size: 3em;
+    color: white;
+    text-shadow: -1px 1px 0 #000,
+        1px 1px 0 #000,
+        1px -1px 0 #000,
+        -1px -1px 0 #000;
+    z-index: 98;
+    text-align: center;
+    line-height: 1;
+}
+
+.swiper {
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+}
+
+.swiper-slide {
+    width: 300px !important;
+    height: 300px !important;
+}
+
+.swiper-slide img {
+    width: 300px;
+    height: 300px;
+}
+
+.about {
+    background-color: #0E1924;
+    color: #fff;
+    flex-direction: row;
+    padding: 0 1em 0 1em;
+}
+
+.about h1 {
+    font-size: xx-large;
+}
+
+.about .about-text,
+.about .image,
+.about .features {
+    width: 33.3%;
+}
+
+.about .image img {
+    width: 90%;
+}
+
+.about .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .features .feature {
+    display: flex;
+    column-gap: 2em;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .features .feature h2 {
+    text-align: center;
+    width: 10em;
+}
+
+.about .features .feature img {
+    width: 100px;
+}
+
+/* #wave {
+    position: absolute;
+    bottom: 0;
+} */
+
+@keyframes clouds-loop-1 {
+    to {
+        background-position: -1000px 0;
+    }
+}
+
+.clouds-1 {
+    background-image: url("https://s.cdpn.io/15514/clouds_2.png");
+    animation: clouds-loop-1 20s infinite linear;
+}
+
+@keyframes clouds-loop-2 {
+    to {
+        background-position: -1000px 0;
+    }
+}
+
+.clouds-2 {
+    background-image: url("https://s.cdpn.io/15514/clouds_1.png");
+    animation: clouds-loop-2 15s infinite linear;
+}
+
+@keyframes clouds-loop-3 {
+    to {
+        background-position: -1579px 0;
+    }
+}
+
+.clouds-3 {
+    background-image: url("https://s.cdpn.io/15514/clouds_3.png");
+    animation: clouds-loop-3 17s infinite linear;
+}
+
+.clouds {
+    opacity: 0.4;
+    pointer-events: none;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+}
+
+.clouds-1,
+.clouds-2,
+.clouds-3 {
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9999;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 2em;
+}
+
+.contact {
+    height: fit-content;
+    padding-bottom: 2.5em;
+}
+
+iframe {
+    filter: invert(100%);
+    height: 300px;
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    column-gap: 2em;
+}
+
+.info .direction button {
+    background: #0E1924;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.info .direction button:hover {
+    background: #fff;
+    color: #0E1924;
+    transition: .5s ease all;
+}

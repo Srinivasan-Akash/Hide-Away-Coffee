@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img class="link" src="./assets/logo.png" />
+        </div>
+        <ul>
+            <li class="link"><i class="fa-solid fa-house-chimney"></i>Home</li>
+            <li class="link"><i class="fa-solid fa-photo-film"></i> Our Gallery</li>
+            <li class="link"><i class="fa-solid fa-address-card"></i> About Us</li>
+            <li class="link"><i class="fa-solid fa-envelope"></i> Contact Us</li>
+        </ul>
+    </nav>
+
+    <div id="splash">
+        <div class="splash-data">
+          <img src="./assets/logo.png" width="50%" alt="">
+          <h1 class="txt-type" data-wait="3000" data-words='["Welcome To Hideaway", "Welcome To Hideaway", "Welcome To Hideaway"]'>Welcome To Hideaway</h1>
+        </div>
+    </div>
+
+    <main id="home">
+        <section class="main-info">
+            <img width="100" class="coffee-cup" src="./assets/coffee.webp">
+            <h1>Hideaway Coffee</h1>
+            <h3>Cafe in London</h3>
+            <h3>Open today until 7:00 PM</h3>
+            <div class="btns">
+                <button>Contact Us</button>
+                <button>Get Directions</button>
+            </div>
+        </section>
+        <section class="hero-img">
+            <img src="./assets/coffee in hand.png">
+        </section>
+        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="-638.4 565.5 2401.7 1084.9" zoomAndPan="magnify"
+            style="fill: rgb(255, 255, 255);" role="img" aria-label="arrows">
+            <g>
+                <g id="__id5_suisi3i9k2">
+                    <path
+                        d="M-595.64435,1650.437L-588.2521,1635.47Q-469.24426,1353.2977,-328.1248,1214.6211Q-146.97028,1035.4064,86.84671,958.2854Q481.66833,825.8827,722.38776,1063.8948Q838.73785,1200.7356,819.18884,1375.3668Q783.53046,1538.9698,646.43976,1552.0911Q572.3982,1557.1947,525.2872,1478.4791Q470.35098,1372.3694,481.85107,1273.8793Q520.291,1098.6283,756.50903,943.3369Q931.3727,827.87524,1125.5372,804.46533Q1226.8683,792.39294,1351.9314,806.04364L1462.9082,822.8753L1658.4207,863.9566L1700.5786,870.483Q1723.294,872.1951,1741.8408,839.5849Q1749.7996,804.6469,1734.975,798.1064Q1676.8267,772.5074,1583.238,750.6391Q1399.6775,711.33417,1185.7975,721.98004Q937.75433,726.27686,676.52673,906.0951Q419.4611,1095.5691,403.81424,1297.5853Q411.1421,1444.8585,476.61523,1537.0084Q542.4917,1627.217,651.0707,1624.542Q835.9255,1601.2314,887.542,1411.0828Q923.3235,1202.2223,790.602,1028.5524Q656.97156,884.796,475.40775,849.35535Q261.00696,813.8801,39.428154,893.69543Q-283.52374,1020.058,-463.1585,1247.4816Q-583.9853,1400.0308,-627.1404,1504.0398Q-638.41034,1525.4036,-638.19495,1569.0486Q-635.41125,1583.3959,-628.01697,1591.8114L-593.8407,1626.9723Q-590.72546,1635.638,-595.64435,1650.437"
+                        style="fill: inherit;"></path>
+                </g>
+                <g id="__id6_suisi3i9k2">
+                    <path
+                        d="M1726.6962,781.5019Q1728.5354,782.0494,1730.0763,782.7519L1730.0763,782.7519C1728.9708,782.2692,1727.8368,781.8515,1726.6798,781.5018 Z M1700.2084,813.841C1699.1442,817.12897,1698.6428,820.57465,1698.7273,824.0323L1698.7119,824.03217Q1698.4849,818.17194,1700.1924,813.8409 Z M1359.574,565.56335C1349.8156,565.515,1340.1993,570.1167,1334.2139,578.7388C1324.5593,592.64575,1328.0068,611.7461,1341.9137,621.40063Q1361.2401,634.8173,1383.6047,647.6192C1383.9786,647.8332,1384.3572,648.03937,1384.7399,648.2376Q1527.1055,721.94086,1540.4591,731.3736L1540.4509,731.3736C1540.9507,731.7519,1541.4619,732.1149,1541.9839,732.462Q1629.332,790.5312,1669.4001,816.5903L1669.3845,816.59015Q1597.3748,833.97943,1338.3436,906.82935L1338.3436,906.82935C1322.0463,911.41284,1312.5503,928.3402,1317.1338,944.6377C1320.9225,958.1096,1333.1461,966.9341,1346.4762,967.0001C1349.272,967.0139,1352.1165,966.64246,1354.942,965.8478Q1670.5293,877.092,1702.2981,872.06354C1703.4806,871.8764,1704.6506,871.6202,1705.803,871.2961Q1728.5383,864.9035,1740.3268,857.15094L1740.3268,857.15094Q1758.296,845.3337,1759.9146,827.825L1759.8978,827.825Q1763.2504,810.6713,1747.5599,795.4841L1747.5599,795.4841Q1742.8717,790.9462,1735.3328,785.6932L1735.3325,785.6932C1733.936,784.72003,1732.4635,783.8669,1730.9315,783.1412L1730.9152,783.14105Q1716.7915,775.05035,1576.8047,681.99115L1576.7899,681.99115Q1576.3264,681.64886,1575.8319,681.2995L1575.8306,681.2985Q1559.0736,669.46185,1413.6407,594.16296L1413.6276,594.16296Q1393.8264,582.80615,1376.8757,571.0387C1371.5907,567.36975,1365.5555,565.5929,1359.574,565.56335 Z"
+                        style="fill: inherit;"></path>
+                </g>
+            </g>
+        </svg>
+        <svg class="dots" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="55.9 56.6 88.3 86.9" zoomAndPan="magnify"
+            style="fill: rgb(255, 255, 255);" role="img" aria-label="Dot Corner Decoration">
+            <g>
+                <g id="__id8_s70yionbs">
+                    <circle cx="142.24" cy="141.53" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="132.3" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="132.3" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="123.07" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="123.07" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="123.07" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="113.84" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="113.84" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="113.84" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="114.08" cy="113.84" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="104.61" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="104.61" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="104.61" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="114.08" cy="104.61" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="104.69" cy="104.61" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="95.39" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="95.39" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="95.39" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="114.08" cy="95.39" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="104.69" cy="95.39" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="95.31" cy="95.39" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="86.16" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="86.16" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="86.16" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="114.08" cy="86.16" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="104.69" cy="86.16" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="95.31" cy="86.16" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="85.92" cy="86.16" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="114.08" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="104.69" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="95.31" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="85.92" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="76.53" cy="76.93" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="114.08" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="104.69" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="95.31" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="85.92" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="76.53" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="67.15" cy="67.7" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="142.24" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="132.85" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="123.47" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="114.08" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="104.69" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="95.31" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="85.92" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="76.53" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="67.15" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                    <circle cx="57.76" cy="58.47" r="1.9" style="fill: inherit;"></circle>
+                </g>
+            </g>
+        </svg>
+    </main>
+
+    <section class="gallery">
+        <h1 class="gallery-h1">GALLERY</h1>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/coffee in hand.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/shop photo 1.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/shop 2.jpeg" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class='clouds'>
+            <div class='clouds-1'></div>
+            <div class='clouds-2'></div>
+            <div class='clouds-3'></div>
+        </div>
+        <!-- <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(14, 25, 36, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,392L30,400.2C60,408,120,425,180,383.8C240,343,300,245,360,228.7C420,212,480,278,540,277.7C600,278,660,212,720,171.5C780,131,840,114,900,163.3C960,212,1020,327,1080,375.7C1140,425,1200,408,1260,408.3C1320,408,1380,425,1440,424.7C1500,425,1560,408,1620,351.2C1680,294,1740,196,1800,187.8C1860,180,1920,261,1980,302.2C2040,343,2100,343,2160,343C2220,343,2280,343,2340,359.3C2400,376,2460,408,2520,367.5C2580,327,2640,212,2700,179.7C2760,147,2820,196,2880,187.8C2940,180,3000,114,3060,98C3120,82,3180,114,3240,138.8C3300,163,3360,180,3420,187.8C3480,196,3540,196,3600,204.2C3660,212,3720,229,3780,269.5C3840,310,3900,376,3960,359.3C4020,343,4080,245,4140,171.5C4200,98,4260,49,4290,24.5L4320,0L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(14, 25, 36, 1)" offset="0%"></stop><stop stop-color="rgba(14, 25, 36, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,196L30,236.8C60,278,120,359,180,400.2C240,441,300,441,360,400.2C420,359,480,278,540,269.5C600,261,660,327,720,359.3C780,392,840,392,900,343C960,294,1020,196,1080,147C1140,98,1200,98,1260,114.3C1320,131,1380,163,1440,187.8C1500,212,1560,229,1620,220.5C1680,212,1740,180,1800,171.5C1860,163,1920,180,1980,212.3C2040,245,2100,294,2160,285.8C2220,278,2280,212,2340,179.7C2400,147,2460,147,2520,147C2580,147,2640,147,2700,155.2C2760,163,2820,180,2880,228.7C2940,278,3000,359,3060,326.7C3120,294,3180,147,3240,106.2C3300,65,3360,131,3420,171.5C3480,212,3540,229,3600,220.5C3660,212,3720,180,3780,171.5C3840,163,3900,180,3960,163.3C4020,147,4080,98,4140,65.3C4200,33,4260,16,4290,8.2L4320,0L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(14, 25, 36, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,441L30,408.3C60,376,120,310,180,310.3C240,310,300,376,360,359.3C420,343,480,245,540,228.7C600,212,660,278,720,269.5C780,261,840,180,900,187.8C960,196,1020,294,1080,277.7C1140,261,1200,131,1260,98C1320,65,1380,131,1440,155.2C1500,180,1560,163,1620,171.5C1680,180,1740,212,1800,261.3C1860,310,1920,376,1980,343C2040,310,2100,180,2160,106.2C2220,33,2280,16,2340,81.7C2400,147,2460,294,2520,294C2580,294,2640,147,2700,122.5C2760,98,2820,196,2880,245C2940,294,3000,294,3060,261.3C3120,229,3180,163,3240,171.5C3300,180,3360,261,3420,318.5C3480,376,3540,408,3600,424.7C3660,441,3720,441,3780,408.3C3840,376,3900,310,3960,310.3C4020,310,4080,376,4140,383.8C4200,392,4260,343,4290,318.5L4320,294L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path><defs><linearGradient id="sw-gradient-3" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(14, 25, 36, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 150px); opacity:0.7" fill="url(#sw-gradient-3)" d="M0,441L30,432.8C60,425,120,408,180,359.3C240,310,300,229,360,179.7C420,131,480,114,540,122.5C600,131,660,163,720,204.2C780,245,840,294,900,261.3C960,229,1020,114,1080,122.5C1140,131,1200,261,1260,277.7C1320,294,1380,196,1440,163.3C1500,131,1560,163,1620,204.2C1680,245,1740,294,1800,269.5C1860,245,1920,147,1980,98C2040,49,2100,49,2160,49C2220,49,2280,49,2340,106.2C2400,163,2460,278,2520,318.5C2580,359,2640,327,2700,269.5C2760,212,2820,131,2880,98C2940,65,3000,82,3060,147C3120,212,3180,327,3240,375.7C3300,425,3360,408,3420,383.8C3480,359,3540,327,3600,294C3660,261,3720,229,3780,212.3C3840,196,3900,196,3960,179.7C4020,163,4080,131,4140,122.5C4200,114,4260,131,4290,138.8L4320,147L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path></svg> -->
+    </section>
+
+    <section class="about">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <article>
+                The best services, satisfied customers, delicious coffee from the most exotic contries and a wide range
+                of drinks and deserts - That is all about Us com to Hideaway Coffee and see for yourself. We are waiting
+                for your coming
+            </article>
+        </div>
+
+        <div class="image">
+            <img src="./assets/25.11.2022_19.56.50_REC-removebg-preview.png" />
+        </div>
+        <div class="features">
+            <div class="feature">
+                <div>
+                    <img src="./assets/customer.webp" />
+                </div>
+                <div>
+                    <h2>98%</h2>
+                    <h2>Satisfied Customer Rate</h2>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div>
+                    <img src="./assets/7124badebc.gif" />
+                </div>
+                <div>
+                    <h2>128</h2>
+                    <h2>Varieties Of Drinks & Deserts</h2>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div>
+                    <img src="./assets/t.webp" />
+                </div>
+                <div>
+                    <h2>12</h2>
+                    <h2>Successfull Cafe</h2>
+                </div>
+            </div>
+        </div>
+
+        <svg class="hallSvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1">
+            <path fill="#fff"
+                d="M0,32L120,80C240,128,480,224,720,261.3C960,299,1200,277,1320,266.7L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+                class="color233c7b svgShape" />
+        </svg>
+    </section>
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9950.85770703225!2d-0.13243796350708603!3d51.426672309455405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876068369f2a677%3A0x9ae3eacb9b94fe96!2sHideaway!5e0!3m2!1sen!2sin!4v1669403490001!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section class="info">
+                <div class="direction">
+                    <button>Get Direction</button>
+                </div>
+                <div class="address">
+                    <address>
+                        <h2>Address:-</h2>
+                        542 9th Avenue<br>
+                        New York, NY 10018<br>
+                        USA
+                    </address>
+                </div>
+                <div class="buissness-hours">
+                    <i>
+                        <h2>Buissness Hours:-</h2>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Mon:</th>
+                                    <td><span>6:00 AM – 7:00 PM</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Tue:</th>
+                                    <td><span >6:00 AM – 7:00 PM</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Wed:</th>
+                                    <td ><span >6:00 AM – 7:00 PM</span></td>
+                                </tr>
+                                <tr>
+                                    <th class="x2TOCf">Thu:</th>
+                                    <td ><span >6:00 AM – 7:00 PM</span></td>
+                                </tr>
+                                <tr>
+                                    <th class="x2TOCf">Fri:</th>
+                                    <td ><span >6:00 AM – 7:00 PM</span></td>
+                                </tr>
+                                <tr>
+                                    <th class="x2TOCf">Sat:</th>
+                                    <td ><span >6:00 AM – 7:00 PM</span></td>
+                                </tr>
+                                <tr>
+                                    <th class="x2TOCf">Sun:</th>
+                                    <td ><span >6:00 AM – 7:00 PM</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </i>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="./splash-screen.js"></script>
+    <script src="./animation.js"></script>
+</body>
+
+</html>
