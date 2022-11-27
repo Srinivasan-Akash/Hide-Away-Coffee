@@ -36,8 +36,7 @@ links.forEach(link => {
 gsap.from(".coffee-cup", {
   duration: 3,
   rotation: 360,
-  delay: 3,
-  repeat: -1
+  delay: 3
 })
 
 
